@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import 'materialize-css';
 import SignupForm from '../components/SignupForm';
-
 import { handleFormData, axiosPost } from '../helpers';
 export default function Login(props) {
   const [error, setError] = useState('');
 
   //::::::HANDLE SIGNUP
-
   const handleSignup = async (e) => {
     const user = await handleFormData(e);
     const response = await axiosPost('/guests/signup', user);
@@ -18,6 +16,7 @@ export default function Login(props) {
       props.history.push('/');
     }
   };
+
   return (
     <>
       <div id="main-container" className="container vh-100">

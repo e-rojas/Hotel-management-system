@@ -1,15 +1,16 @@
 import React from 'react';
 
-const LoginForm = () => {
+const LoginForm = (props) => {
   return (
     <>
-      <form>
-        <div class="row">
+      <form onSubmit={props.handleLogin}>
+        <div className="row">
           <div className="col s12">
             <div className="row">
               <div className="input-field col s12">
                 <i className="material-icons prefix">mail</i>
                 <input
+                  name="email"
                   required
                   type="text"
                   id="autocomplete-input"
@@ -20,6 +21,7 @@ const LoginForm = () => {
               <div className="input-field col s12">
                 <i className="material-icons prefix">verified_user</i>
                 <input
+                  name="password"
                   required
                   type="text"
                   id="autocomplete-input"
@@ -27,16 +29,17 @@ const LoginForm = () => {
                 />
                 <label>User Password</label>
                 <button
-                  class="btn waves-effect waves-light btn-small right"
+                  className="btn waves-effect waves-light btn-small right"
                   type="submit"
                   name="action"
                 >
                   Submit
-                  <i class="material-icons right">send</i>
+                  <i className="material-icons right">send</i>
                 </button>
               </div>
             </div>
           </div>
+          <small className="red-text pl-3">{props.error} </small>
         </div>
       </form>
     </>
