@@ -10,6 +10,7 @@ const LoginForm = () => {
               <div className="input-field col s12">
                 <i className="material-icons prefix">mail</i>
                 <input
+                  required
                   type="text"
                   id="autocomplete-input"
                   className="autocomplete"
@@ -19,6 +20,7 @@ const LoginForm = () => {
               <div className="input-field col s12">
                 <i className="material-icons prefix">verified_user</i>
                 <input
+                  required
                   type="text"
                   id="autocomplete-input"
                   className="autocomplete"

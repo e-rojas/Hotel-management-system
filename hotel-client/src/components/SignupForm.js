@@ -10,6 +10,7 @@ const LoginForm = ({ handleSignup }) => {
               <div className="input-field col s12">
                 <i className="material-icons prefix">person</i>
                 <input
+                  required
                   name="name"
                   type="text"
                   id="autocomplete-input"
@@ -20,6 +21,7 @@ const LoginForm = ({ handleSignup }) => {
               <div className="input-field col s12">
                 <i className="material-icons prefix">mail</i>
                 <input
+                  required
                   name="email"
                   type="email"
                   id="autocomplete-input"
@@ -30,6 +32,7 @@ const LoginForm = ({ handleSignup }) => {
               <div className="input-field col s12">
                 <i className="material-icons prefix">verified_user</i>
                 <input
+                  required
                   name="password"
                   type="password"
                   id="autocomplete-input"

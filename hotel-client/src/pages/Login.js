@@ -12,7 +12,7 @@ export default function Login() {
             <LoginForm />
           </div>
           <span className="pl-2">
-            <a href="#/">
+            <a href="/signup">
               <small>Sign up to get an account</small>
             </a>
           </span>
