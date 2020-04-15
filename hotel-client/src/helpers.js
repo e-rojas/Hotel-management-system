@@ -10,8 +10,8 @@ export const handleFormData = (e) => {
   return data;
 };
 
-export const axiosPost = async (path, user) => {
+export const axiosPost = async (path, data) => {
   const URL = process.env.REACT_APP_API + path;
-  const response = await axios.post(URL, user);
+  const response = await axios.post(URL, data);
   return response;
 };

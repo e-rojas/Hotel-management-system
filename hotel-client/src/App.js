@@ -11,7 +11,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route
-          path="/"
+          path="/bookings"
           render={() =>
             localStorage.getItem('token') != null ? (
               <Guest />
